@@ -3,8 +3,9 @@ package oopVazifa;
 import java.util.Scanner;
 
 public class Uchburchak {
+	
 	public static void main(String ar[]) {
-		int a, b, c;
+		 double a, b, c;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Gipotenuzani kiriting: ");
 		a = sc.nextInt();
@@ -13,10 +14,12 @@ public class Uchburchak {
 		System.out.print("Katet2 uzunligi kiriting: ");
 		c = sc.nextInt();
 		if (a * a == (b * b) + (c * c)) {
-			System.out.print("Ushbu uchburchak to'g'ri burchakli uchburchak");
+			System.out.println("Ushbu uchburchak to'g'ri burchakli uchburchak");
+			togriburchakliUchburchakYuzasi.uchburchakYuzasi( b, c);
 		} else {
-			System.out.print("Ushbu uchburchak to'g'ri burchakli uchburchak emas");
+			System.out.println("Ushbu uchburchak to'g'ri burchakli uchburchak emas");
 		}
+		UchburchakPerimetri.perimetr(a, b, c);
 	}
 
 }
