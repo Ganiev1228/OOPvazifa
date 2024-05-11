@@ -11,10 +11,10 @@ public class MathFunctions2 {
 			if (counter >= 2) {
 				break;
 			}
-			System.out.print(
-			"Doira radiusini aniqlash uchun 1 ni,  " 
-			+ "\nUchburchak yuzini aniqlash uchun 2 ni, "
-			+ "\nSonni darajaga ko'tarish amali uchun 3 ni bosing: ");
+			System.out.print(""+
+			"Doira radiusini aniqlash uchun 1 ni,  " + 
+			"\nUchburchak yuzini aniqlash uchun 2 ni, "+ 
+		    "\nSonni darajaga ko'tarish amali uchun 3 ni bosing: ");
 
 			int choice = sc.nextInt();
 			if (choice == 1) {
@@ -35,19 +35,18 @@ public class MathFunctions2 {
 				c = sc.nextDouble();
 				MathFunctions.Uchburchakyuzasi(a, b, c);
 				counter++;
-			} 
-			if(choice==3) {
+			}
+			if (choice == 3) {
 				System.out.println("Darajaga ko'tarish uchun sonni va uning darajasini kiriting");
 				int a;
 				int b;
 				System.out.println("Sonni yoki raqamni kiriting: ");
-				a=sc.nextInt();
+				a = sc.nextInt();
 				System.out.println("Darajani kiriting: ");
-				b=sc.nextInt();
-				MathFunctions.darajagakotarish(a,b);
+				b = sc.nextInt();
+				MathFunctions.darajagakotarish(a, b);
 				counter++;
-			}
-			else {
+			} else {
 				System.out.println("Mavjud bo'magan amal;");
 				break;
 

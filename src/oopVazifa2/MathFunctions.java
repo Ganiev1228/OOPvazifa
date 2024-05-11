@@ -23,8 +23,9 @@ public class MathFunctions {
 		double ds = p * (p - a) * (p - r) * (p - s);
 		System.out.println("Uchburchak yuzasi: " + Math.sqrt(ds));
 	}
-	public static void darajagakotarish (int d, int d1) {
-		double d2 = Math.pow(d,d1);
-		System.out.println(d+" sonining "+d1+" chi darajasi="+d2+"\n");
+
+	public static void darajagakotarish(int d, int d1) {
+		double d2 = Math.pow(d, d1);
+		System.out.println(d + " sonining " + d1 + " chi darajasi=" + d2 + "\n");
 	}
 }
