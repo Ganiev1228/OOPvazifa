@@ -12,19 +12,20 @@ public class MathFunctions2 {
 				break;
 			}
 			System.out.print(""+
-			"Doira radiusini aniqlash uchun 1 ni,  " + 
+			"\nDoira radiusini aniqlash uchun 1 ni,  " + 
 			"\nUchburchak yuzini aniqlash uchun 2 ni, "+ 
 		    "\nSonni darajaga ko'tarish amali uchun 3 ni bosing: ");
 
 			int choice = sc.nextInt();
 			if (choice == 1) {
-				System.out.println("Doira raidiusini kiriting: ");
+				System.out.print("Doira raidiusini kiriting: ");
 				MathFunctions.setR(sc.nextDouble());
 				MathFunctions.doirayuzasi();
 				counter++;
+			  
 			}
 
-			if (choice == 2) {
+			else if  (choice == 2) {
 				System.out.println("\nUchburchak yuzasini topish uchun uning barcha tomonlari kiriting.");
 				double a, b, c;
 				System.out.print("1-tomoni: ");
@@ -36,7 +37,7 @@ public class MathFunctions2 {
 				MathFunctions.Uchburchakyuzasi(a, b, c);
 				counter++;
 			}
-			if (choice == 3) {
+			else if (choice == 3) {
 				System.out.println("Darajaga ko'tarish uchun sonni va uning darajasini kiriting");
 				int a;
 				int b;

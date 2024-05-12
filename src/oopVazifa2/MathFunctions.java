@@ -16,11 +16,12 @@ public class MathFunctions {
 
 	public static void doirayuzasi() {
 		s = PI * (r * r);
+		System.out.println("Doirani yuzasi:"+s);
 	}
 
 	public static void Uchburchakyuzasi(double a, double b, double c) {
 		double p = (a + b + c) / 2;
-		double ds = p * (p - a) * (p - r) * (p - s);
+		double ds = p * (p - a) * (p - b) * (p - c);
 		System.out.println("Uchburchak yuzasi: " + Math.sqrt(ds));
 	}
 
