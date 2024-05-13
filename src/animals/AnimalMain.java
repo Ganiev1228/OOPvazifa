@@ -2,8 +2,8 @@ package animals;
 
 public class AnimalMain {
 
-	public static void main (String ar[]) {
-		
+	public static void main(String ar[]) {
+
 		Animal an = new Dog();
 		an.Name();
 		an.Sound();
